@@ -12,8 +12,6 @@ echo  $message = $_POST["yourMessage"];
 
  mail($recipient, $subject, $mailBody, "From: $name <$email>");
 
-echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
-
 }
 ?>
 <!DOCTYPE HTML>
@@ -322,8 +320,6 @@ echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="post" action="mailto:raymond.alana@gmail.com">
-								<input type="submit" value="Send Email" />
 								<div class="field half first">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" value="" />
@@ -338,11 +334,10 @@ echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 									<textarea name="message" id="message" rows="6"></textarea>
 								</div>
 								<ul class="actions">
-									<li><a href="mailto:raymond.alana@gmail.com"class="button">Submit< SUBMIT EMAIL TO: raymond.alana@gmail.com </a>
-										<form action="" method="post" id="spaceing" data-abide>
+									<li><form action="" method="post" id="spaceing" data-abide>
 											<button name="submit" type="submit">Submit</button>
 							</form>
 								</ul>
-								
+
 
 </html>
