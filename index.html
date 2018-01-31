@@ -322,51 +322,27 @@ echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form action="" method="post" id="spaceing" data-abide>
-        <div class="form-bg">
-            <div class="row">
-                <div id="name" class="large-6 medium-6 small-12 columns">
-                    <label> <h5>Name</h5>
-                        <input type="text" name="yourName" placeholder="What is you're name?"></input>
-                    </label>
-                </div>
-
-                <div id="email" class="large-6 medium-6 small-12 columns">
-                    <label><h5>Email</h5>
-                        <input type="email" name="yourEmail" placeholder="Please enter in you're email."required></input>
-                    </label>
-                    <small class="error">An email Address is required.</small>
-                </div>
-            </div>
-
-                <div class="row">
-                    <div id="phone"class="large-6 medium-6 small-12 columns">
-                        <label><h5>Phone</h5>
-                            <input type="text" name="yourPhone" placeholder="Please enter you're phone number."></input>
-                        </label>
-                    </div>
-
-                    <div id="location" class="large-6 medium-6 small-12 columns">
-                        <label><h5>Location</h5>
-                            <input type="text" name="yourLocate" placeholder="Where on Oahu are you currently living?"></input>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div id="message-area" class="large-12 medium-12 small-12 columns">
-                        <label><h5>Message</h5>
-                            <textarea id="message" name="yourMessage" placeholder="Please tell us about you're plumbing issues."></textarea>
-                        </label>
-                    </div>
-                </div>
-
-            <div class="row">
-                <div id="submit" class="large-3 medium-3 small-3 columns">
-                    <button name="submit" type="submit">Submit</button>
-                </div>
-            </div>
-        </div>
+							<form method="post" action="mailto:raymond.alana@gmail.com">
+								<input type="submit" value="Send Email" />
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" value="" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" value="" />
+									<small class="error">An email Address is required.</small>
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6"></textarea>
+								</div>
+								<ul class="actions">
+									<li><a href="mailto:raymond.alana@gmail.com"class="button">Submit< SUBMIT EMAIL TO: raymond.alana@gmail.com </a>
+										<form action="" method="post" id="spaceing" data-abide>
+											<button name="submit" type="submit">Submit</button>
 							</form>
 								</ul>
+								
+
 </html>
