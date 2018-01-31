@@ -1,3 +1,21 @@
+<?php
+if(isset($_POST["submit"])) {
+$recipient = "raymond.alana@gmail.com"; //my email
+echo $subject = 'Email message from bootesandcrafts';
+echo $name = $_POST ["yourName"];
+echo $email = $_POST["yourEmail"];
+echo $phone = $_POST["yourPhone"];
+echo $location = $_POST["yourLocate"];
+echo  $message = $_POST["yourMessage"];
+
+ $mailBody="Name: $name\nEmail: $email\n\n$message";
+
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
+}
+?>
 <!DOCTYPE HTML>
 <!--
 	Story by HTML5 UP
@@ -312,14 +330,17 @@
 								<div class="field half">
 									<label for="email">Email</label>
 									<input type="email" name="email" id="email" value="" />
+									<small class="error">An email Address is required.</small>
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
 									<textarea name="message" id="message" rows="6"></textarea>
 								</div>
 								<ul class="actions">
-									<li><form method="get" action="mailto:raymond.alana@gmail.com" >
-<input type="submit" value="Send Email" />
-</form>
+									<li><form action="" method="post" id="spaceing" data-abide>
+										<form method="get" action="mailto:raymond.alana@gmail.com" >
+											<input type="submit" value="Send Email" />
+											<button name="submit" type="submit">Submit</button>
+							</form>
 								</ul>
 </html>
