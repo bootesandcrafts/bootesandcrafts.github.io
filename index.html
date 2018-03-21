@@ -369,6 +369,21 @@ echo  $message = $_POST["yourMessage"];
 
 			</div>
 		</section>
+		<!-- Test code-->
+
+		<form action="your-server-side-code" method="post">
+			<script
+				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+				data-key="sk_test_JpiWyDtnrTevKzIVVGU8E4M2"
+				data-amount="999"
+				data-name="Stripe.com"
+				data-description="Example charge"
+				data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+				data-locale="auto"
+				data-zip-code="true">
+			</script>
+		</form>
+	
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center" id="foot">
 						<div class="inner">
@@ -382,6 +397,7 @@ echo  $message = $_POST["yourMessage"];
 					</footer>
 
 			</div>
+<!-- Payment-->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
